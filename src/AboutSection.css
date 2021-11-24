@@ -1,0 +1,130 @@
+img {
+  width: 100%;
+}
+.about {
+  padding: 6rem 0;
+  margin: 0 10rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  color: white;
+}
+
+.about-heading {
+  margin-bottom: 2rem;
+}
+
+.about-heading h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #30e5c2;
+}
+
+.about-heading p {
+  font-size: 1rem;
+  color: #30e5c2;
+}
+
+.about_text {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  max-width: 600px;
+  text-align: justify;
+  font-family: "Roboto";
+}
+
+.profile-img {
+  flex: 1;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 3rem;
+}
+
+.about-details {
+  flex: 1;
+}
+
+.about-buttons {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.about_main_buttons-link {
+  text-decoration: none;
+}
+
+.about_main_buttons {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffbb12;
+  transition: 0.3s ease background-color;
+  color: #10141f;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about_main_buttons:hover {
+  background-color: #e2a711;
+}
+
+@media only screen and (max-width: 1080px) {
+  .about-heading p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+    gap: 0;
+    margin: 0.7rem 0;
+  }
+
+  .about_main_buttons {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about_main_buttons-link {
+    padding: 1rem 0;
+  }
+
+  .about-details,
+  .profile-img {
+    width: 100%;
+  }
+
+  .about-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-details {
+    flex: 4;
+    text-align: center;
+  }
+
+  .about_text {
+    max-width: 100%;
+  }
+
+  .profile-img {
+    flex: 3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 7rem 0;
+    margin: 0 3rem;
+  }
+}
