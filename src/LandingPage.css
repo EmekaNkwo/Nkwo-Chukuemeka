@@ -1,0 +1,83 @@
+.heading-container {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("./images/background-01.png");
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 4rem;
+  margin: 1.2rem 0;
+  color: white;
+}
+
+.header p {
+  font-family: "Roboto";
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: #30e5c2;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header h1 {
+    font-size: 3.2rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1080px) {
+  .heading-container {
+    background-image: url("./images/background2-02.png");
+  }
+
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .heading-container {
+    background-image: none;
+    background-color: #06141f;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+    max-width: 300px;
+  }
+
+  .header-line::after {
+    position: absolute;
+    content: "";
+    width: 1.5px;
+    height: 45%;
+    background-color: #ffbc12c2;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+  }
+}
