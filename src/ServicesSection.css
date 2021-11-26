@@ -1,19 +1,28 @@
 .skills_section {
-  margin: 0 auto;
-  padding: 5rem;
+  margin: 2rem auto;
+  padding: 3.5rem;
   text-align: center;
   color: white;
+  background-color: #06141f;
+}
+
+.skills-line {
+  width: 7%;
+  margin: 1rem auto;
+  border-color: #ffbb12;
 }
 
 .skills_heading {
+  margin: 0 auto;
   font-size: 1.5rem;
   text-align: center;
-  margin: 3rem 0;
+
+  padding: 2rem 0;
 }
 
 .skills_heading h1 {
-  text-transform: uppercase;
   color: #30e5c2;
+  text-transform: uppercase;
 }
 
 .skills_heading p {
@@ -21,22 +30,20 @@
   color: #30e5c2;
 }
 
-.skills_list {
-  margin: 0 auto;
-  padding: 1.5rem;
+.skills_container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  width: 60%;
+  justify-content: center;
+  gap: 8rem;
+  margin: 2.5rem 0;
 }
+
 .skills h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .skill-icon {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 .skills {
@@ -50,10 +57,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .skills_list {
+  .skills_container {
     flex-direction: column;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    gap: 2rem;
   }
 
   .skill-icon {

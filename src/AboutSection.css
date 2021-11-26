@@ -20,27 +20,38 @@ img {
 .about-heading h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #30e5c2;
+  color: #06141f;
 }
 
 .about-heading p {
   font-size: 1rem;
-  color: #30e5c2;
+  color: #06141f;
 }
 
+.about-line {
+  width: 15%;
+  margin: 1rem 0;
+  border-color: #ffbb12;
+}
 .about_text {
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2;
   max-width: 600px;
   text-align: justify;
   font-family: "Roboto";
+  color: #06141f;
 }
 
-.profile-img {
+.profile-div {
   flex: 1;
   max-width: 400px;
   max-height: 400px;
   margin: 0 3rem;
+  filter: drop-shadow(5px 3px 0.3rem #0c0c0ca2);
+}
+
+.profile-img {
+  border-radius: 10px;
 }
 
 .about-details {
@@ -73,7 +84,7 @@ img {
   background-color: #e2a711;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1200px) {
   .about-heading p {
     font-size: 1rem;
     text-align: center;
@@ -82,6 +93,10 @@ img {
   .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .about-line {
+    margin: 1rem auto;
   }
 
   .about-buttons {
@@ -100,7 +115,7 @@ img {
   }
 
   .about-details,
-  .profile-img {
+  .profile-div {
     width: 100%;
   }
 
@@ -110,14 +125,13 @@ img {
 
   .about-details {
     flex: 4;
-    text-align: center;
   }
 
   .about_text {
     max-width: 100%;
   }
 
-  .profile-img {
+  .profile-div {
     flex: 3;
   }
 }
@@ -126,5 +140,9 @@ img {
   .about {
     padding: 7rem 0;
     margin: 0 3rem;
+  }
+
+  .about_text {
+    text-align: center;
   }
 }

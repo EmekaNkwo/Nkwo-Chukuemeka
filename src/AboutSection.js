@@ -11,6 +11,7 @@ export default function AboutSection() {
             <div class="about-heading">
               <p>Let me introduce</p>
               <h1>Myself</h1>
+              <hr className="about-line" />
             </div>
             <p className="about_text">
               Hello, I am Emeka. I really love to design and code. To me,
@@ -36,8 +37,12 @@ export default function AboutSection() {
               </a>
             </div>
           </div>
-          <div class="profile-img">
-            <img src={profilepic} alt="profile-display" />
+          <div class="profile-div">
+            <img
+              src={profilepic}
+              alt="profile-display"
+              className="profile-img"
+            />
           </div>
         </div>
       </div>

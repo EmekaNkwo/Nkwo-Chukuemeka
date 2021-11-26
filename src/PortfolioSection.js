@@ -11,11 +11,12 @@ export default function PortfolioSection() {
           <div className="portfolio-heading">
             <p>Some of my recent</p>
             <h1>Projects</h1>
+            <hr className="portfolio-line" />
           </div>
 
           <div className="portfolio_list">
             <div className="portfolio_item">
-              <a href="/Portfolio" className="portfolio-link">
+              <a href="/" className="portfolio-link">
                 <img
                   src={project1}
                   alt="Porfolio Img"

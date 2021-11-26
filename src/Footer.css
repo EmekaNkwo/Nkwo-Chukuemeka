@@ -1,9 +1,9 @@
 .Footer {
   margin: 2rem 0;
-  color: rgba(255, 255, 255, 0.644);
+  color: #06141f;
 }
 
 .Footer-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
 }

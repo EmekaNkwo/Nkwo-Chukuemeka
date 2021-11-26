@@ -25,7 +25,7 @@
 .header p {
   font-family: "Roboto";
   margin: 0 auto;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #30e5c2;
   max-width: 500px;
   line-height: 1.5;
@@ -37,30 +37,36 @@
   }
 
   .header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1080px) {
-  .heading-container {
-    background-image: url("./images/background2-02.png");
-  }
-
-  .header h1 {
-    font-size: 2.8rem;
-  }
-
-  .header p {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1200px) {
   .heading-container {
     background-image: none;
     background-color: #06141f;
   }
 
+  .header h1 {
+    font-size: 3.2rem;
+  }
+
+  .header p {
+    font-size: 1.2rem;
+  }
+  .header-line::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 30%;
+    background-color: #ffbc12;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 899px) {
   .header h1 {
     font-size: 2.2rem;
   }
@@ -68,16 +74,5 @@
   .header p {
     font-size: 1.2rem;
     max-width: 300px;
-  }
-
-  .header-line::after {
-    position: absolute;
-    content: "";
-    width: 1.5px;
-    height: 45%;
-    background-color: #ffbc12c2;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
   }
 }

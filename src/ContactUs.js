@@ -13,6 +13,7 @@ export default function ContactUs() {
       <div className="contact">
         <div className="contact-heading">
           <h1>Get in Touch</h1>
+          <hr className="contact-line" />
         </div>
 
         <div className="contact_info_wrapper">
@@ -25,7 +26,7 @@ export default function ContactUs() {
             <div className="contact_info">
               <div className="info-button">
                 <a
-                  href="mailto:nkwoemeka49@gmail.com&subject=Hi, Chukwuemeka"
+                  href="mailto:nkwoemeka49@gmail.com?subject=Hi, Chukwuemeka"
                   className="button-link"
                 >
                   Send a Message
